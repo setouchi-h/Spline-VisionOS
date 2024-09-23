@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		983DDAAE2CA16A2300A66684 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 983DDAAD2CA16A2300A66684 /* RealityKitContent */; };
+		983DDAC42CA16D3C00A66684 /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 983DDAC32CA16D3C00A66684 /* SplineRuntime */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983DDAC42CA16D3C00A66684 /* SplineRuntime in Frameworks */,
 				983DDAAE2CA16A2300A66684 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +96,7 @@
 			name = "Spline-VisionOS";
 			packageProductDependencies = (
 				983DDAAD2CA16A2300A66684 /* RealityKitContent */,
+				983DDAC32CA16D3C00A66684 /* SplineRuntime */,
 			);
 			productName = "Spline-VisionOS";
 			productReference = 983DDAA82CA16A2300A66684 /* Spline-VisionOS.app */;
@@ -123,6 +126,9 @@
 			);
 			mainGroup = 983DDA9F2CA16A2300A66684;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				983DDAC22CA16D3C00A66684 /* XCRemoteSwiftPackageReference "spline-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 983DDAA92CA16A2300A66684 /* Products */;
 			projectDirPath = "";
@@ -348,10 +354,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		983DDAC22CA16D3C00A66684 /* XCRemoteSwiftPackageReference "spline-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/splinetool/spline-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		983DDAAD2CA16A2300A66684 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		983DDAC32CA16D3C00A66684 /* SplineRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 983DDAC22CA16D3C00A66684 /* XCRemoteSwiftPackageReference "spline-ios" */;
+			productName = SplineRuntime;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
